@@ -1,0 +1,286 @@
+<html>
+<head>
+    <title>The Survival Guide for Data Journalist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+    <style>
+        /* Inspired by: http://embedresponsively.com/ */
+        
+        responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-1-to-1 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-4-to-3 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        responsive-block iframe,
+        responsive-block object,
+        responsive-block embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        figure {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        figure figcaption {
+            display: block;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 0.85em;
+			text-align: center
+        }
+        
+        h2 {
+            border-bottom: 1px solid #ccc;
+            margin-top: 2em
+        }
+        
+        cover-image {
+            display: block;
+            position: relative;
+        }
+        
+        cover-image author-block {
+            position: absolute;
+            bottom: 0em;
+            left: 0;
+            right: 0;
+            color: black;
+            text-align: center;
+            padding: 2px;
+            opacity: 0.6;
+			font-size: 0.75em;
+            background-color: white;
+        }
+body cover-image author-block {
+}
+        cover-image title-block {
+            position: absolute;
+            bottom: 1.5em;
+            left: 0;
+            right: 0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0.6;
+			font-size: 1em;
+            background-color: black;
+        }
+body cover-image title-block {
+}
+        code {
+            margin: 0;
+            max-width: 100%;
+            word-break: break-all;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <cover-image>
+        <img src="images/gifbanner.gif" alt="cover photo">
+        <h1>
+        	<title-block>
+        		<strong>The Survival Guide for Data Journalist</strong>
+        	</title-block>
+        </h1>
+        <author-block>
+            <strong>by Chao GAO, Chenxi LI, Haotian XU, Xingjie ZENG</strong>
+        </author-block>
+    </cover-image>
+
+    <p>According to Google's Data journalist open book in 2017, data journalism represents stories that are enriched by data, stories that use data to investigate and stories that explain data. Chart 1 is the google trends of the concepts of data journalism and digital journalism. Since 2009, the google trends (chart 1) shows that of the heat of the concept of data journalism has been significantly increasing. However, what is a so-called data journalist? What should the data journalists be like in foreseeable future? By digging deep into Global Data Journalists Directory published online by Journalism++, We try to answer these 2 questions through a data-driven way.</p>
+    
+    <responsive-block>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rtqeTXuK0N0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </responsive-block>
+
+	<p>As students of communication program, who also take part in data courses, so we hope to investigate and find what are key trends and skills to be a data journalist. In this way, we can contribute some information or reference for those potential students who are willing to be a data journalist in the future.<p>
+   
+    <figure>
+        <img src="charts/chart-1.png" alt="">
+        <figcaption>
+            <em> chart 1-Global Data Journalist Google Trend Index </em>
+        </figcaption>
+    </figure>
+    
+    <h2> The rise of data journalism, with programming skills? </h2>
+
+    <p>The chart 2 is the comparison between the google trends of the concepts of data journalism and the GitHub contributions changed from 2008 of the data journalists living in the 5 most active countries in the data journalism industry.</p>
+    
+    <figure>
+        <img src="charts/chart-2.png" alt="">
+        <figcaption>
+            <em>The data journalist contribution trend and Google trend comparison chart</em>.
+        </figcaption>
+    </figure>
+    
+    <p>It’s impressive that many of the peaks of the two charts share the same time points. Since the GitHub contribution represents the times that one uploads his/her programming work, it is obvious that there may be a correlation between programming skills and data journalism, which raised a question for us that whether data journalists equal to programmers or at least programming is an important skill for the data journalism industry.</p>
+
+    <h2> The Relationship between Programming and Data Journalist </h2>
+
+	<p>What is the relationship between programming and data journalism, and whether programming is a key skill for a data journalist? This kind of trend will have a certain reference and instruction function for potential data journalists.</p>
+	
+	<p>After crawling over 300,000 pieces of data written by journalists and reporters from different countries around the world through Github, we have classified their data according to different countries and regions, and calculated their contribution to Github, so as to obtain the total number of data news of a country or region on Github.</p>
+	
+	<ratio-1-to-1>
+        <responsive-block>
+            <iframe src='https://plot.ly/~FLYSTEPHEN/11.embed' frameborder='0' allowfullscreen>
+            </iframe>
+        </responsive-block>
+    </ratio-1-to-1>
+	
+	<p>From the above picture, we can see that the colour distribution of different countries has different shades. The deeper the blue colour means the more data news contributed on Github by this region. Thus, we can clearly see that the United States is the country with the largest contribution, and European countries have also made a lot of contribution.</p>
+      
+    <h2> The Impact of Education on Data Journalism </h2>
+
+	<p>The Irish data scientist Behahrh Heravi has made a visual analysis of these educational institutions providing data-related journalism programs by region through the statistics of 219 objects around the world.</p>
+ 	<figure>
+        <img src="charts/chart-3.png" alt="">
+        <figcaption>
+            <em> The data journalism education institution distribution </em>
+        </figcaption>
+    </figure>
+  	<p>In this picture, the distribution of each dot represents the area where the university or institution offering data-related journalism courses is located, and the darker the dot shows the more schools offering data courses in the area. From this, we can see that the dots in the United States are not only widely distributed, but also dark in colour.</p>
+  	
+  	<p>Judging from the contribution of data news on Github, the United States occupies a large proportion. Similarly, in terms of popularization and promotion of data journalism education, the United States is still in a leading position. We believe these conclusions can support the reason why the U.S. data news industry is also leading the way in the world.</p>
+  	
+  	<p>Because there is sufficient and diverse educational environment, potential data journalists can learn and master the knowledge and skills they need before entering the industry, thus continuously increasing the proportion and competitiveness of data journalism in the United States. Therefore, we decided to study the situation of the United States in the field of data news in depth.</p>
+   
+    <h2> Further analysis in the US </h2>
+
+    <p>In this part, we analyze the US from three dimensions, geography, the number of data journalists and the contribution on their Github. The below picture is the number of data journalists in different cities in the US. Obviously, New York has most data journalists.</p>
+    
+    <figure>
+        <img src="charts/chart-4.png" alt="">
+        <figcaption>
+            <em> The data journalism location in the US </em>
+        </figcaption>
+    </figure>
+    
+	<p>Then, we calculate the average contributions per person, which means divide the whole contributions by the number of data journalists. New York is hard to be found in this picture. Right? The layer wider means the more average contributions.</p>
+   
+    <figure>
+        <img src="charts/chart-5.png" alt="">
+        <figcaption>
+            <em> The per capita contribution in the US </em>
+        </figcaption>
+    </figure>
+    
+    <p>Then, we face questions:
+		Why the number of DJ is highest in New York, but the average contribution is low than others?  
+		Is it a coincidence or maybe programming doesn’t have a strong relationship with DJ itself?  
+		we decided to conduct an identical crawling procedure to find out whether it will be the same result under a geographical scale towards the whole world.</p>
+   
+    <ratio-1-to-1>
+        <responsive-block>
+            <iframe src='https://plot.ly/~FLYSTEPHEN/39.embed' frameborder='0' allowfullscreen>
+            </iframe>
+        </responsive-block>
+    </ratio-1-to-1>
+    
+    <p>From this map, we find out that even under a world scale, the large number of DJ does not mean a high average contribution, although the whole contribution is highest worldwide. Hence, we tend to believe that DJ and programming don’t strongly relate to each other as we think before — or programming is not the essential part for being a good DJ.</p>
+
+    <h2> Then what is important to become a DJ? </h2>
+
+	<p>After scraping the frequent words of USA DJ from Twitter, the researchers find out that the most frequent word is ‘data’ and the rest is related to the content of hot topic in news such as trump, election and time, etc.</p>
+ 	
+ 	<figure>
+        <img src="charts/chart-6.png" alt="">
+        <figcaption>
+            <em> Twitter word cloud </em>
+        </figcaption>
+    </figure>
+    
+  	<p>By scraping the job description of DJ at Indeed and Careers (both are job hunting website), it tends out the most frequent word is still ‘data’. However, this time you will figure out some specific words that meet the needs of companies to hire DJ with these relative skills. Put the word frequency chart from Twitter and word frequency chart from job description into comparison, both of the carts emphasize the abilities of storytelling. </p>
+  	
+  	<figure>
+        <img src="charts/chart-7.jpg" alt="">
+        <figcaption>
+            <em>Top 20 words usually mentioned on DJ's Tweets</em>
+        </figcaption>
+    </figure>
+  	
+  	<p>What’s more, the basic skills of analysis and using tools just has been mentioned in a quite few times. However, it is hard to say what the word ‘data’ really means in both charts. It could simply focus on using data to prove the content of certain news or focus the measures that DJ use to collect data.</p>
+  	
+    <figure>
+        <img src="charts/chart-8.jpg" alt="">
+        <figcaption>
+            <em> Job description of DJ analysis and top 15 words </em>
+        </figcaption>
+    </figure>
+  	
+	<p>By categorizing frequent words into a different dimension, it concludes that to become a data journalist, there are some important skills and abilities one should acquire. On one hand, the frequent words of Twitter have two group which shows the most common topic of what data journalist have been talking about in daily life. On the other hand, the frequent words of job description show the requirement from the company that was looking for data journalist employees. To have a better visualization of the information, you can refer to the following talent portrait.</p>
+	
+	<figure>
+        <img src="charts/chart-9.jpg" alt="">
+        <figcaption>
+            <em>Talent profile of DJ</em>
+        </figcaption>
+    </figure>
+	
+	<p>You can see that there are basically three parts of abilities a data journalist should obtain. The data part requires a general understanding and application towards using and collecting data. The storytelling part requires a good expression and sensibility of stories and news. The experience part requires a past participation in research, teamwork and communication with news agency or institute. Last but not least, a curiosity toward new things, caring news and a relative degree or diploma will also be considered as an important quality of becoming a good data journalist.</p>
+   
+
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qp0HIF3SfI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37311363-17');
+    </script>
+
+</body>
+
+</html>
